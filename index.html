@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU-Africa GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student GPA Calculator</h1>
+        <form id="gpaForm">
+            <div class="course-rows" id="courseContainer">
+                <!-- Initial 3 course rows -->
+                <div class="course-row">
+                    <input type="text" placeholder="Course name" required>
+                    <select class="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                    </select>
+                </div>
+                <div class="course-row">
+                    <input type="text" placeholder="Course name" required>
+                    <select class="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                    </select>
+                </div>
+                <div class="course-row">
+                    <input type="text" placeholder="Course name" required>
+                    <select class="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="addCourse">Add Another Course</button>
+            <button type="button" id="calculate">Calculate GPA</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
